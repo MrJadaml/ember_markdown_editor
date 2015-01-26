@@ -1,12 +1,30 @@
 <div class="main">
-  <h1>Live Markdown Editor</h1>
-  <section class="markdown-side">
-    <h2>Markdown</h2>
-    {{textarea value=markdown placeholder="Write markdown here"}}
+  <section class="left">
+    <nav>
+      <!-- <span class="title">Markdown:</span> -->
+      <ul class="styles">
+        <input class="moss" type="radio" name="foo" checked>
+        <input class="shadow" type="radio" name="foo">
+        <input class="fire" type="radio" name="foo">
+      </ul>
+    </nav>
+    <div class="markdown">
+      {{textarea value=markdown placeholder="Write markdown here"}}
+    </div>
   </section>
-  <section class="html-side">
-    <h2>HTML</h2>
-    {{showdown-addon markdown}}
+  <section class="right">
+    <nav>
+      <!-- <span class="title">Rendered:</span> -->
+      <ul class="styles">
+        <input class="shadow" type="radio" name="bar" checked>
+        <input class="fire" type="radio" name="bar">
+        <input class="lite" type="radio" name="bar">
+      </ul>
+    </nav>
+    <div class="html">
+      {{showdown-addon markdown}}
+    </div>
   </section>
   {{outlet}}
 </div>
+<footer>some stuff </footer>
