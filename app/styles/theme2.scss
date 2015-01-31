@@ -1,26 +1,29 @@
 .shadow .html {
-  background-color: gray;
-  color: #A4886D;
+  background-color: rgba(28, 28, 28, 1);
+  color: rgba(153, 135, 244, 1);
 }
 
 .shadow .markdown {
-  background-color: #0B101E;
+  background-color: rgba(52, 41, 86, 1);
 }
 
 .shadow textarea {
-  background-color: #0B101E;
-  color: rgba(95, 27, 154, 1);
+  background-color: rgba(52, 41, 86, 1);
+  color: rgba(178, 158, 200, 1);
 }
+
+.shadow ::-webkit-input-placeholder { color: rgba(229, 231, 230, 1) }
+
 
 /* Radio Buttons */
 .shadow input[type="radio"].moss {
-  background: rgba(48, 136, 108, 1);
+  background: rgba(61, 180, 160, 1);
   border: solid rgba(black, 0.25) .2em;
 }
 
 .shadow input[type="radio"].shadow {
-  background: rgba(174, 172, 213, 1);
-  border: solid rgba(white, 1) .2em;
+  background: rgba(52, 41, 86, 1);
+  border: solid rgba(white, .9) .2em;
 }
 
 .shadow input[type="radio"].fire {

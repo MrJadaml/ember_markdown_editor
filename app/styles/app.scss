@@ -12,14 +12,12 @@ body {
   font-family: 'Libre Baskerville', serif;
   font-weight: 400;
   line-height: 1.45;
-  color: #333;
 }
 
 h1, h2, h3, h4 {
   margin: 0.4em 0 0.5em;
   font-weight: inherit;
   line-height: 1.2;
-  color: #545775;
 }
 
 h1 {
@@ -47,10 +45,10 @@ textarea {
   width: 100%;
   height: 100%;
   margin: none;
-  background: #1E1E1E;
   border: none;
   font-size: 1em;
-  color: #F0544F;
+  background-color: rgba(61, 180, 160, 1);
+  color: white;
 }
 
 textarea:focus {
@@ -58,9 +56,9 @@ textarea:focus {
   outline: 0;
 }
 
-.ember-view { height: 100% }
+::-webkit-input-placeholder { color: rgba(26, 147, 130, 1) }
 
-.html { background-color: #D3FFF3 }
+.ember-view { height: 100% }
 
 .main {
   width: 100%;
@@ -87,6 +85,18 @@ textarea:focus {
   height: 100%;
 }
 
+.html {
+  padding-top: 50px;
+  background-color: white;
+  color: rgba(0, 56, 80, 1);
+}
+
+.markdown {
+  padding-top: 50px;
+  background-color: rgba(61, 180, 160, 1);
+}
+
+
 /* Radio Button Defaults */
 
 input[type="radio"] {
@@ -96,17 +106,40 @@ input[type="radio"] {
   border-radius: 50%;
   transition: .2s;
   cursor:pointer;
-  border: solid rgba(black, 0.25) .2em;
 }
 
 input[type="radio"]:focus { outline: 0 }
-//
-// footer {
-//   background-color: #2a2a2a;
-//   overflow: hidden;
-//   color: #59C9A5;
-//   padding: 3px 10px;
-// }
+
+
+/* Radio Buttons Styles */
+input[type="radio"].moss {
+  background: rgba(61, 180, 160, 1);
+  border: solid rgba(black, 0.5) .2em;
+}
+
+input[type="radio"].shadow {
+  background: rgba(52, 41, 86, 0.8);
+  border: solid rgba(black, 0.5) .2em;
+}
+
+input[type="radio"].fire {
+  background: rgba(91, 29, 6, 1);
+  border: solid rgba(black, .5) .2em;
+}
+
+/* Radios on Hover */
+input[type="radio"].moss:hover {
+  border: solid rgba(white, 1) .2em;
+}
+
+input[type="radio"].shadow:hover {
+  border: solid rgba(white, 1) .2em;
+}
+
+input[type="radio"].fire:hover {
+  border: solid rgba(white, 1) .2em;
+}
+
 
 
 @import 'theme2.scss';

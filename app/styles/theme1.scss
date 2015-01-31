@@ -1,11 +1,49 @@
-input[type="radio"].moss {
-
-}
-
 .moss textarea {
   color: #18CEA1;
 }
 
-div.moss div.html {
-  background-color: red;
+.moss .html {
+  background-color: white;
+  color: rgba(0, 56, 80, 1);
+}
+
+.moss .markdown {
+  background-color: rgba(61, 180, 160, 1);
+}
+
+.moss textarea {
+  background-color: rgba(61, 180, 160, 1);
+  color: white;
+}
+
+.moss ::-webkit-input-placeholder { color: rgba(26, 147, 130, 1) }
+
+
+/* Radio Buttons */
+.moss input[type="radio"].moss {
+  background: rgba(61, 180, 160, 1);
+  border: solid rgba(black, 0.25) .2em;
+}
+
+.moss input[type="radio"].shadow {
+  background: rgba(52, 41, 86, 0.8);
+  border: solid rgba(black, 0.5) .2em;
+}
+
+.moss input[type="radio"].fire {
+  background: rgba(91, 29, 6, 1);
+  border: solid rgba(black, .5) .2em;
+}
+
+/* Radios on Hover */
+.moss input[type="radio"].moss:hover {
+  border: solid rgba(white, 1) .2em;
+}
+
+.moss input[type="radio"].shadow:hover {
+  border: solid rgba(white, 1) .2em;
+}
+
+.moss input[type="radio"].fire:hover {
+  border: solid rgba(white, 1) .2em;
 }
