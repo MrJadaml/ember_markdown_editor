@@ -15,10 +15,6 @@ body {
   color: #333;
 }
 
-p {
-  margin-bottom: 1.3em;
-}
-
 h1, h2, h3, h4 {
   margin: 0.4em 0 0.5em;
   font-weight: inherit;
@@ -38,18 +34,13 @@ h4 {font-size: 1.25em;}
 
 small, .font_small {font-size: 0.8em;}
 
-nav {
-  background-color: #2a2a2a;
-  overflow: hidden;
-  color: #59C9A5;
-  padding: 3px 10px;
-}
+p { margin-bottom: 1.3em }
 
-nav li { display: inline }
+ul li { display: inline }
 
 ul.styles {
   float: right;
-  padding-top: 5px;
+  padding: 5px 5px 0 0;
 }
 
 textarea {
@@ -67,9 +58,9 @@ textarea:focus {
   outline: 0;
 }
 
-.styles li { margin: 0px }
-
 .ember-view { height: 100% }
+
+.html { background-color: #D3FFF3 }
 
 .main {
   width: 100%;
@@ -96,48 +87,28 @@ textarea:focus {
   height: 100%;
 }
 
-.html { background-color: #D3FFF3 }
-
-
 /* Radio Button Defaults */
 
 input[type="radio"] {
-  width: 15px;
-  height: 15px;
-  box-shadow:
-    inset 0 0 0 .4em white,
-    0 0 0 .3em;
+  -webkit-appearance: none;
+  width: 25px;
+  height: 25px;
   border-radius: 50%;
   transition: .2s;
   cursor:pointer;
-  opacity: .5;
-  background: #eeeeee;
-  color: #363945;
-  -webkit-appearance: none;
+  border: solid rgba(black, 0.25) .2em;
 }
 
-input[type="radio"]:hover {
-  background: #363945;
-  box-shadow:
-    inset 0 0 0 .6em white,
-    0 0 0 .3em;
-}
+input[type="radio"]:focus { outline: 0 }
+//
+// footer {
+//   background-color: #2a2a2a;
+//   overflow: hidden;
+//   color: #59C9A5;
+//   padding: 3px 10px;
+// }
 
-input[type="radio"]:checked {
-  opacity: 1;
-}
 
-input[type="radio"]:focus {
-  outline: 0;
-}
-
-footer {
-  background-color: #2a2a2a;
-  overflow: hidden;
-  color: #59C9A5;
-  padding: 3px 10px;
-}
-
-@import 'theme1.scss';
 @import 'theme2.scss';
+@import 'theme1.scss';
 @import 'theme3.scss';

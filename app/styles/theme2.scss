@@ -1,21 +1,42 @@
-/* Left - Side */
-
-.shadow nav {
-  background-color: navy;
+.shadow .html {
+  background-color: gray;
+  color: #A4886D;
 }
 
-input[type="radio"].shadow {
-  background: #8859B7;
-  box-shadow:
-    inset 0 0 0 .4em white,
-    0 0 0 .3em #8859B7;
-}
-
-.shadow .markdown, textarea {
+.shadow .markdown {
   background-color: #0B101E;
-  color: #8859B7;
 }
 
-.shadow .right {
+.shadow textarea {
+  background-color: #0B101E;
+  color: rgba(95, 27, 154, 1);
+}
 
+/* Radio Buttons */
+.shadow input[type="radio"].moss {
+  background: rgba(48, 136, 108, 1);
+  border: solid rgba(black, 0.25) .2em;
+}
+
+.shadow input[type="radio"].shadow {
+  background: rgba(174, 172, 213, 1);
+  border: solid rgba(white, 1) .2em;
+}
+
+.shadow input[type="radio"].fire {
+  background: rgba(91, 29, 6, 1);
+  border: solid rgba(black, .25) .2em;
+}
+
+/* Radios on Hover */
+.shadow input[type="radio"].moss:hover {
+  border: solid rgba(white, 1) .2em;
+}
+
+.shadow input[type="radio"].shadow:hover {
+  border: solid rgba(white, 1) .2em;
+}
+
+.shadow input[type="radio"].fire:hover {
+  border: solid rgba(white, 1) .2em;
 }

@@ -1,20 +1,41 @@
-.fire nav {
-  background-color: #111;
-}
-
-input[type="radio"].fire {
-  background: #EF4545;
-  box-shadow:
-    inset 0 0 0 .4em white,
-    0 0 0 .3em #FC0000;
-}
-
 .fire .html {
-  background-color: #280102;
+  background-color: #1A0700;
   color: #A4886D;
 }
 
 .fire .markdown, textarea {
-  background-color: #111;
+  background-color: #110D0D;
   color: #C81D1D;
+}
+
+/* Radio Buttons */
+.fire input[type="radio"].moss {
+  background: rgba(25, 106, 80, .85);
+  border: solid rgba(white, 0.25) .2em;
+}
+
+.fire input[type="radio"].shadow {
+  background: rgba(174, 172, 213, .55);
+  border: solid rgba(white, 0.25) .2em;
+}
+
+.fire input[type="radio"].fire {
+  background: transparent;
+  border: solid rgba(white, 1) .2em;
+}
+
+/* Radios on Hover */
+.fire input[type="radio"].moss:hover {
+  background: rgba(25, 106, 80, 1);
+  border: solid rgba(white, 1) .2em;
+}
+
+.fire input[type="radio"].shadow:hover {
+  background: rgba(174, 172, 213, .55);
+  border: solid rgba(white, 1) .2em;
+}
+
+.fire input[type="radio"].fire:hover {
+  background: transparent;
+  border: solid rgba(white, 1) .2em;
 }

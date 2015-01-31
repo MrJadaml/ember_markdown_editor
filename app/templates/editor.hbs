@@ -1,18 +1,5 @@
 <div class="main" {{bind-attr class="themeLeft"}}>
 
-  <nav>
-    <ul class="styles">
-      <li {{action 'mossTheme'}} >
-        {{radio-button class='moss' value='one' checked=selectedNumber}}
-      </li>
-      <li {{action 'shadowTheme'}} >
-        {{radio-button class='shadow' value='two' checked=selectedNumber}}
-      </li>
-      <li {{action 'fireTheme'}} >
-        {{radio-button class='fire' value='three' checked=selectedNumber}}
-      </li>
-    </ul>
-  </nav>
 
   <section class="left">
     <div class="markdown">
@@ -21,6 +8,17 @@
   </section>
 
   <section class="right">
+    <ul class="styles">
+      <li {{action 'mossTheme'}} title='Moss'>
+        {{radio-button class='moss' value='one' checked=selectedNumber}}
+      </li>
+      <li {{action 'shadowTheme'}} title='Shadow'>
+        {{radio-button class='shadow' value='two' checked=selectedNumber alt='Shadow'}}
+      </li>
+      <li {{action 'fireTheme'}} title='Night Vision'>
+        {{radio-button class='fire' value='three' checked=selectedNumber alt='Night Vision'}}
+      </li>
+    </ul>
     <div class="html">
       {{showdown-addon markdown}}
     </div>
