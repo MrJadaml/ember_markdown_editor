@@ -1,0 +1,21 @@
+/* Left - Side */
+
+.shadow nav {
+  background-color: navy;
+}
+
+input[type="radio"].shadow {
+  background: #8859B7;
+  box-shadow:
+    inset 0 0 0 .4em white,
+    0 0 0 .3em #8859B7;
+}
+
+.shadow .markdown, textarea {
+  background-color: #0B101E;
+  color: #8859B7;
+}
+
+.shadow .right {
+
+}

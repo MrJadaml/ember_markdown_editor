@@ -1,9 +1,6 @@
-/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
 
-*,:after,:before {
-  box-sizing:border-box
-}
+*,*:after,*:before { box-sizing:border-box }
 
 html {
   height: 100%;
@@ -20,7 +17,6 @@ body {
 
 p {
   margin-bottom: 1.3em;
-  color: #718F94;
 }
 
 h1, h2, h3, h4 {
@@ -37,9 +33,7 @@ h1 {
 }
 
 h2 {font-size: 1.953em;}
-
 h3 {font-size: 1.563em;}
-
 h4 {font-size: 1.25em;}
 
 small, .font_small {font-size: 0.8em;}
@@ -51,13 +45,11 @@ nav {
   padding: 3px 10px;
 }
 
-nav li {
-  display: inline;
-  padding: 0 5px;
-}
+nav li { display: inline }
 
 ul.styles {
   float: right;
+  padding-top: 5px;
 }
 
 textarea {
@@ -75,13 +67,9 @@ textarea:focus {
   outline: 0;
 }
 
-::-webkit-input-placeholder {
-  color: #EF4545;
-}
+.styles li { margin: 0px }
 
-.ember-view {
-  height: 100%;
-}
+.ember-view { height: 100% }
 
 .main {
   width: 100%;
@@ -108,9 +96,7 @@ textarea:focus {
   height: 100%;
 }
 
-.html {
-  background-color: #D3FFF3;
-}
+.html { background-color: #D3FFF3 }
 
 
 /* Radio Button Defaults */
@@ -124,7 +110,7 @@ input[type="radio"] {
   border-radius: 50%;
   transition: .2s;
   cursor:pointer;
-  opacity: .6;
+  opacity: .5;
   background: #eeeeee;
   color: #363945;
   -webkit-appearance: none;
@@ -145,51 +131,13 @@ input[type="radio"]:focus {
   outline: 0;
 }
 
-
-/* Markdown Themes */
-
-input[type="radio"].shadow {
-  background: #8859B7;
-  box-shadow:
-  inset 0 0 0 .4em white,
-  0 0 0 .3em #8859B7;
-}
-
-input[type="radio"]:checked.shadow {
-
-}
-
-input[type="radio"].moss {
-  background: #18CEA1;
-  box-shadow:
-  inset 0 0 0 .4em white,
-  0 0 0 .3em #18CEA1;
-}
-
-textarea.moss {
-  color: #18CEA1
-}
-
-input[type="radio"].fire {
-  background: #EF4545;
-  box-shadow:
-  inset 0 0 0 .4em white,
-  0 0 0 .3em #EF4545;
-}
-
-
-/* Output Themes */
-
-input[type="radio"].lite {
-  background: yellow;
-  box-shadow:
-  inset 0 0 0 .4em white,
-  0 0 0 .3em yellow;
-}
-
 footer {
   background-color: #2a2a2a;
   overflow: hidden;
   color: #59C9A5;
   padding: 3px 10px;
 }
+
+@import 'theme1.scss';
+@import 'theme2.scss';
+@import 'theme3.scss';

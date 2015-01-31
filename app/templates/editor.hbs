@@ -1,0 +1,31 @@
+<div class="main" {{bind-attr class="themeLeft"}}>
+
+  <nav>
+    <ul class="styles">
+      <li {{action 'mossTheme'}} >
+        {{radio-button class='moss' value='one' checked=selectedNumber}}
+      </li>
+      <li {{action 'shadowTheme'}} >
+        {{radio-button class='shadow' value='two' checked=selectedNumber}}
+      </li>
+      <li {{action 'fireTheme'}} >
+        {{radio-button class='fire' value='three' checked=selectedNumber}}
+      </li>
+    </ul>
+  </nav>
+
+  <section class="left">
+    <div class="markdown">
+      {{textarea placeholder="Write markdown here" value=markdown}}
+    </div>
+  </section>
+
+  <section class="right">
+    <div class="html">
+      {{showdown-addon markdown}}
+    </div>
+  </section>
+
+</div>
+
+{{outlet}}

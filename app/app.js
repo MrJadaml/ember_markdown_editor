@@ -14,7 +14,3 @@ var App = Ember.Application.extend({
 loadInitializers(App, config.modulePrefix);
 
 export default App;
-
-$("[name='foo']").on('click', function() {
-  $('textarea').addClass('moss')
-});
