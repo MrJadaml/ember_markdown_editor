@@ -61,11 +61,13 @@ textarea:focus {
 
 footer {
   background-color: rgba(16, 17, 18, 1);
-  color: rgba(95, 191, 249, 1);
-  padding: 5px 0 3px 5px;
+  color: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  width: 100%;
+  padding: 3px;
   a {
     text-decoration: none;
-    color: rgba(95, 191, 249, 1);
+    color: rgba(61, 180, 160, 1);
   }
 }
 
@@ -162,6 +164,14 @@ code {
   font-family: 'Source Code Pro', Arial, serif;
 }
 
+.twitter {
+  float: left;
+}
+
+.github {
+  float: right;
+  padding-right: 5px;
+}
 
 
 @import 'theme2.scss';
